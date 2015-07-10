@@ -7,79 +7,75 @@
   <title>Nashville Software School</title>
 </head>
 
-<body>
-  <nav>
-  <table>
-    <tr>
-      <td>View Music</td>
-      <td><a href="#">Add Music</a></td>
-      <td><a href="#">Profile</a></td>
-    </tr>
-  </table>
-</nav>
+<body>  
+<nav>
+  <ul>
+    <li class="view">View Music</li>
+    <li class="add"><a href="#">Add Music</a></li>
+    <li class="profile"><a href="#">Profile</a></li>
+  </ul>
+</nav></br>
 
-<section class="music">
-  <div class="length">
-    <h4>Song Length:</h4>
-      <input type="range" min="0" max="100"></input>
-  </div>
-  <div class="pick"><h4>Artist:</h4>
+<!-- left hand side-->
+
+<section>
+  <div class="flexbox">
+    <p>Song length:</p>
+    <form class="picks">
+      <input type="range" min="0" max="100">
+      </input>
+    </br></br>
+    <p>Artist:</p>
     <select class="artist">
       <option value="label" label="Christina Aquilera"></option>
       <option value="label" label="Madonna"></option>
       <option value="label" label="Garth Brooks"></option>
       <option value="label" label="Lori Morgan"></option>
       <option value="label" label="Bob Seger"></option>
-    </select> 
-    <h4>Album:</h4>
+    </select>
+    <p>Album:</p>
     <select class="album">
       <option value="label" label="Back to Basics"></option>
       <option value="label" label="Rebel Heart"></option>
       <option value="label" label="The Ultimate Hits"></option>
       <option value="label" label="Something in Red"></option>
       <option value="label" label="Ultimate Hits: Rock & Roll Never Forgets"></option>
-    </select>
-    <form action="">
-      <input type="checkbox" name="Rock" value="Rock">Rock<br>
-      <input type="checkbox" name="Pop" value="Pop">Pop<br>
-      <input type="checkbox" name="Country" value="Country">Country<br>
-      <input type="checkbox" name="Classical" value="Classical">Classical<br>
-      <input type="checkbox" name="Jazz" value="Jazz">Jazz<br>
-      <input type="checkbox" name="Hip hop" value="Hip hop">Hip hop<br>
+    </select>    
     </form>
-    <form action="">
-      <input type="button" name="filter" value="Filter">
-   </div>
+  </div>
 </section>
 
-<section class="song">
-  <table class="info">
-    <tr>
-      <td colspan="3"><h2>I guess you had to be there</h2></td>
-    </tr>
-    <tr>
-      <h4><td>Lori Morgan</td><td>Something in Red</td><td>Country</td></h4>
-    </tr>
-    <tr>
-      <td colspan="3"><h2>Unapologetic Bitch</h2></td>
-    </tr>
-    <tr>
-      <h4><td>Madonna</td><td>Rebel Heart</td><td>Pop</td></h4>
-    </tr>
-    <tr>
-      <td colspan="3"><h2>We've Got Tonight</h2></td>
-    </tr>
-    <tr>
-      <h4><td>Bob Seger</td><td>Ultimate Hits: Rock & Roll Never Forgets</td><td>Rock</td></h4>
-    </tr>
-    <tr>
-      <td colspan="3"><h2>Save Me From Myself</h2></td>
-    </tr>
-    <tr>
-      <h4><td>Christina Aquilera</td><td>Back to Basics</td><td>Pop</td></h4>
-    </tr>
-  </table>
+<!-- right hand side-->
+
+<section>
+  <div class="songs">
+    <p>Save Me From Myself</p>
+    <ul>
+      <li>Christina Aquilera</li>
+      <li>Back To Basics</li>
+      <li>Pop</li>
+    </ul>
+    <p>We've Got Tonight</p>
+    <ul>
+      <li>Bob Seger</li>
+      <li>Ultimate Hits: Rock and Roll Never Forgets</li>
+      <li>Rock</li>
+    </ul>
+    <p>Out Of The Woods</p>
+    <ul>
+      <li>Taylor Swift</li>
+      <li>1989</li>
+      <li>Pop</li>
+    </ul>
+    <p>Unapologetic Bitch</p>
+    <ul>
+      <li>Madonna</li>
+      <li>Rebel Heart</li>
+      <li>Pop</li>
+    </ul>
+  </div>
  </section>
+
 
 </body>
 </html>

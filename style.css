@@ -1,4 +1,60 @@
-td {
+nav {
+  border: 2px solid black;
+  background-color: #ffb4b0;
+}
+
+nav ul li {
+  display: inline;
+  }
+
+nav li + li:before{
+    content: " | ";
+    padding: 0 5px;
+}
+
+section > .flexbox {
+  border: 1px solid black;
+  max-width: 25%;
+  background-color: #4dd7fa;
+  padding: 5px;
+  float: left;
+  clear: left;
+}
+
+
+.artist {
+  width: 80%;
+}
+
+.album {
+  width: 80%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.songs {
+  
+  border: 1px solid black;
+  width: 60%;
+  background-color: #fefac0;
+  float: right;
+  clear: right;
+}
+
+.songs ul li {
+  display: inline;
+}
+
+.songs li + li:before{
+    content: " | ";
+    padding: 0 5px;
+
+
+
+/* Old Code */
+/**td {
   border-style: solid;
   border-top: none;
   border-right: single;
@@ -49,3 +105,4 @@ input {
   width: 95%;
 }
 
+*/
