@@ -12,6 +12,76 @@ nav li + li:before{
     padding: 0 5px;
 }
 
+.filter {
+  width:60%;
+  margin: 0 20%;
+}
+
+section > .flexbox {
+  /*display: flex;*/
+  border: 1px solid black;
+  width: 30%;
+  min-height: 350px;
+  min-width: 220px;
+  background-color: #4dd7fa;
+  padding: 0 2%;
+  float: left;
+  clear: left;
+}
+
+.songs {
+  border: 1px solid black;
+  width: 60%;
+  min-width: 220px;
+  min-height: 350px;
+  background-color: #fefac0;
+  margin: 0 0 0 1%;
+  padding: 0 2%;
+  float: right;
+  clear: right;
+}
+
+.artist {
+  width: 80%;
+}
+
+.album {
+  width: 80%;
+}
+
+ul {
+  list-style-type: none;
+}
+.genre table {
+  width: 100%;
+}
+
+.songs ul li {
+  display: inline;
+}
+
+.songs li + li:before{
+    content: " | ";
+    padding: 0 15px;
+
+
+
+/***** Old Code
+
+nav {
+  border: 2px solid black;
+  background-color: #ffb4b0;
+}
+
+nav ul li {
+  display: inline;
+  }
+
+nav li + li:before{
+    content: " | ";
+    padding: 0 5px;
+}
+
 section > .flexbox {
   border: 1px solid black;
   max-width: 25%;
@@ -51,7 +121,7 @@ ul {
     content: " | ";
     padding: 0 5px;
 
-
+*/
 
 /* Old Code */
 /**td {

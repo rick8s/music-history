@@ -7,6 +7,8 @@
   <title>Nashville Software School</title>
 </head>
 
+
+
 <body>  
 <nav>
   <ul>
@@ -20,27 +22,49 @@
 
 <section>
   <div class="flexbox">
-    <p>Song length:</p>
+    <label>Song length:</label><br>
     <form class="picks">
       <input type="range" min="0" max="100">
       </input>
-    </br></br>
-    <p>Artist:</p>
-    <select class="artist">
-      <option value="label" label="Christina Aquilera"></option>
-      <option value="label" label="Madonna"></option>
-      <option value="label" label="Garth Brooks"></option>
-      <option value="label" label="Lori Morgan"></option>
-      <option value="label" label="Bob Seger"></option>
-    </select>
-    <p>Album:</p>
-    <select class="album">
-      <option value="label" label="Back to Basics"></option>
-      <option value="label" label="Rebel Heart"></option>
-      <option value="label" label="The Ultimate Hits"></option>
-      <option value="label" label="Something in Red"></option>
-      <option value="label" label="Ultimate Hits: Rock & Roll Never Forgets"></option>
-    </select>    
+      </br></br>
+      <div>
+        <label>Artist:</label><br>
+        <select class="artist">
+          <option value="label" label="Christina Aquilera"></option>
+          <option value="label" label="Madonna"></option>
+          <option value="label" label="Garth Brooks"></option>
+          <option value="label" label="Lori Morgan"></option>
+          <option value="label" label="Bob Seger"></option>
+        </select>
+      </div><br>
+      <div>
+        <label>Album:</label><br>
+        <select class="album">
+          <option value="label" label="Back to Basics"></option>
+          <option value="label" label="Rebel Heart"></option>
+          <option value="label" label="The Ultimate Hits"></option>
+          <option value="label" label="Something in Red"></option>
+          <option value="label" label="Ultimate Hits: Rock & Roll Never Forgets"></option>
+        </select>
+      </div><br><br>
+      <div class="genre">
+        <form action="">
+          <table>
+            <tr><td>
+              <input type="checkbox" name="Rock" value="Rock">Rock<br>
+              <input type="checkbox" name="Pop" value="Pop">Pop<br>
+              <input type="checkbox" name="Country" value="Country">Blues<br>
+            </td><td>
+              <input type="checkbox" name="Classical" value="Classical">Classical<br>
+              <input type="checkbox" name="Jazz" value="Jazz">Jazz<br>
+              <input type="checkbox" name="Hip hop" value="Hip hop">Hip hop<br>
+            </td></tr>
+          </table>
+        </div>
+      </form><br>
+      <form action="">
+        <input class="filter" type="button" name="filter" value="Filter">
+      </form>
     </form>
   </div>
 </section>
@@ -75,6 +99,7 @@
     </ul>
   </div>
  </section>
+
 
 
 </body>
