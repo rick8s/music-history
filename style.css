@@ -52,9 +52,14 @@ nav li + li:before{
 .right_sidebar {
   flex-grow: 3;
   margin: 10px 0 0 0;
+  padding: 15px 0 0 15px;
   background-color: #fefac0;
   border: 2px solid black;
   text-align: left;
+}
+
+.right_sidebar {
+  color: #785616;
 }
 
 .songs ul li {
