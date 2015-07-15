@@ -25,15 +25,28 @@ nav li + li:before{
 }
 
 .left_sidebar {
-  text-align: center;
+  text-align: ;
 }
 
 
 .left_sidebar {
   flex-grow: 1;
   margin: 10px 10px 0 0;
+  padding: 15px;
   background-color: #4dd7fa;
   border: 2px solid black;
+}
+
+.artist {
+  width: 80%;
+}
+
+.album {
+  width: 80%;
+}
+
+.criteria {
+  text-align: center;
 }
 
 .right_sidebar {
@@ -60,6 +73,15 @@ ul {
 .songs p {
   color: #785616;
   padding: 0 0 0 30px;
+}
+
+table {
+  text-align: left;
+  padding: 0 20%;
+}
+
+.filter {
+  width: 40%;
 }
 
 

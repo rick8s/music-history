@@ -10,6 +10,8 @@
 
 <body>
 <div class="flex-container">
+ 
+<!--  this is the navigation bar -->
   <nav class="flex-item">
     <ul>
       <li class="view">View Music</li>
@@ -17,7 +19,8 @@
       <li class="profile"><a href="#">Profile</a></li>
     </ul>
   </nav>
-
+  
+<!--  this is the left side content -->
   <body>
     <section class="flex-item left_sidebar">
       <div>
@@ -27,6 +30,7 @@
             <input type="range" min="0" max="100">
             </input>
         </form>
+        <br>
         <label>Artist:</label>
         <br>
         <select class="artist">
@@ -40,6 +44,7 @@
         </select>
       </div>
       <div>
+        <br>
         <label>Album:</label>
         <br>
         <select class="album">
@@ -50,6 +55,8 @@
           <option value="label" label="Crimes of Passion"></option>          
         </select>
       </div>
+      <br>
+    <label>Genre:</label>
       <div class="genre">
         <form action="">
           <table>
@@ -74,12 +81,16 @@
           </table>
         </form>
       </div>
-      <div>
+      <br>
+      <div class="criteria">
         <form action="">
           <input class="filter" type="button" name="filter" value="Filter">
         </form>
       </div>
     </section>
+  
+  <!-- this is the right side content  -->
+  
     <section class="flex-item right_sidebar">
       <div id="newSongs" class="songs">
         <p>Save Me From Myself</p>
