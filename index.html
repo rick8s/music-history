@@ -8,101 +8,107 @@
   <title>Nashville Software School</title>
 </head>
 
+<body>
+<div class="flex-container">
+  <nav class="flex-item">
+    <ul>
+      <li class="view">View Music</li>
+      <li class="add"><a href="#">Add Music</a></li>
+      <li class="profile"><a href="#">Profile</a></li>
+    </ul>
+  </nav>
 
-
-<body>  
-<nav>
-  <ul>
-    <li class="view">View Music</li>
-    <li class="add"><a href="#">Add Music</a></li>
-    <li class="profile"><a href="#">Profile</a></li>
-  </ul>
-</nav></br>
-
-<!-- left hand side-->
-
-<section>
-  <div class="flexbox">
-    <label>Song length:</label><br>
-    <form class="picks">
-      <input type="range" min="0" max="100">
-      </input>
-      </br></br>
+  <body>
+    <section class="flex-item left_sidebar">
       <div>
-        <label>Artist:</label><br>
+        <label>Song length:</label>
+          <br>
+          <form class="picks">
+            <input type="range" min="0" max="100">
+            </input>
+        </form>
+        <label>Artist:</label>
+        <br>
         <select class="artist">
           <option value="label" label="Christina Aquilera"></option>
-          <option value="label" label="Madonna"></option>
-          <option value="label" label="Garth Brooks"></option>
-          <option value="label" label="Lori Morgan"></option>
-          <option value="label" label="Bob Seger"></option>
+          <option value="label" label="Bob Seger">
+          </option>
+          <option value="label" label="Madonna">
+          </option>
+          <option value="label" label="Taylor Swift"></option>
+          <option value="label" label="Pat Benatar"></option>
         </select>
-      </div><br>
+      </div>
       <div>
-        <label>Album:</label><br>
+        <label>Album:</label>
+        <br>
         <select class="album">
           <option value="label" label="Back to Basics"></option>
-          <option value="label" label="Rebel Heart"></option>
-          <option value="label" label="The Ultimate Hits"></option>
-          <option value="label" label="Something in Red"></option>
           <option value="label" label="Ultimate Hits: Rock & Roll Never Forgets"></option>
+          <option value="label" label="Rebel Heart"></option>
+          <option value="label" label="1989"></option>
+          <option value="label" label="Crimes of Passion"></option>          
         </select>
-      </div><br><br>
+      </div>
       <div class="genre">
         <form action="">
           <table>
-            <tr><td>
-              <input type="checkbox" name="Rock" value="Rock">Rock<br>
-              <input type="checkbox" name="Pop" value="Pop">Pop<br>
-              <input type="checkbox" name="Country" value="Country">Blues<br>
-            </td><td>
-              <input type="checkbox" name="Classical" value="Classical">Classical<br>
-              <input type="checkbox" name="Jazz" value="Jazz">Jazz<br>
-              <input type="checkbox" name="Hip hop" value="Hip hop">Hip hop<br>
-            </td></tr>
+            <tr>
+              <td>
+                <input type="checkbox" name="Rock" value="Rock">Rock
+                <br>
+                <input type="checkbox" name="Pop" value="Pop">Pop
+                <br>
+                <input type="checkbox" name="Country" value="Country">Blues
+                <br>
+              </td>
+              <td>
+                <input type="checkbox" name="Classical" value="Classical">Classical
+                <br>
+                <input type="checkbox" name="Jazz" value="Jazz">Jazz
+                <br>
+                <input type="checkbox" name="Hip hop" value="Hip hop">Hip hop
+                <br>
+              </td>
+            </tr>
           </table>
-        </div>
-      </form><br>
-      <form action="">
-        <input class="filter" type="button" name="filter" value="Filter">
-      </form>
-    </form>
-  </div>
-</section>
-
-<!-- right hand side-->
-
-<section>
-  <div  id="newSongs" class="songs">
-    <p>Save Me From Myself</p>
-    <ul>
-      <li>Christina Aquilera</li>
-      <li>Back To Basics</li>
-      <li>Pop</li>
-    </ul>
-    <p>We've Got Tonight</p>
-    <ul>
-      <li>Bob Seger</li>
-      <li>Ultimate Hits: Rock and Roll Never Forgets</li>
-      <li>Rock</li>
-    </ul>
-    <p>Out Of The Woods</p>
-    <ul>
-      <li>Taylor Swift</li>
-      <li>1989</li>
-      <li>Pop</li>
-    </ul>
-    <p>Unapologetic Bitch</p>
-    <ul>
-      <li>Madonna</li>
-      <li>Rebel Heart</li>
-      <li>Pop</li>
-    </ul>
-  </div>
- </section>
-
-
-<script src="songList.js"></script>
+        </form>
+      </div>
+      <div>
+        <form action="">
+          <input class="filter" type="button" name="filter" value="Filter">
+        </form>
+      </div>
+    </section>
+    <section class="flex-item right_sidebar">
+      <div id="newSongs" class="songs">
+        <p>Save Me From Myself</p>
+        <ul>
+          <li>Christina Aquilera</li>
+          <li>Back To Basics</li>
+          <li>Pop</li>
+        </ul>
+        <p>We've Got Tonight</p>
+        <ul>
+          <li>Bob Seger</li>
+          <li>Ultimate Hits: Rock and Roll Never Forgets</li>
+          <li>Rock</li>
+        </ul>
+        <p>Out Of The Woods</p>
+        <ul>
+          <li>Taylor Swift</li>
+          <li>1989</li>
+          <li>Pop</li>
+        </ul>
+        <p>Unapologetic Bitch</p>
+        <ul>
+          <li>Madonna</li>
+          <li>Rebel Heart</li>
+          <li>Pop</li>
+        </ul>
+      </div>
+    </section>
+<script src="songList.js"></script> 
 </body>
 </html>
 

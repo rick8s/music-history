@@ -1,59 +1,47 @@
+.flex-container {
+  padding: 0;
+  margin: 0px;
+  list-style: none;
+  height: 0px;  
+  display: flex;
+  flex-flow: row wrap;
+}
+
 nav {
+  display: inline;
+  flex: 1 100%;
   border: 2px solid black;
   background-color: #ffb4b0;
 }
 
 nav ul li {
   display: inline;
-  }
+  flex: 1 100%;
+}
 
 nav li + li:before{
     content: " | ";
     padding: 0 5px;
 }
 
-.filter {
-  width:60%;
-  margin: 0 20%;
+.left_sidebar {
+  text-align: center;
 }
 
-section > .flexbox {
-  /*display: flex;*/
-  border: 1px solid black;
-  width: 30%;
-  min-height: 350px;
-  min-width: 220px;
+
+.left_sidebar {
+  flex-grow: 1;
+  margin: 10px 10px 0 0;
   background-color: #4dd7fa;
-  padding: 0 2%;
-  float: left;
-  clear: left;
+  border: 2px solid black;
 }
 
-.songs {
-  border: 1px solid black;
-  width: 60%;
-  min-width: 220px;
-  min-height: 350px;
+.right_sidebar {
+  flex-grow: 3;
+  margin: 10px 0 0 0;
   background-color: #fefac0;
-  margin: 0 0 0 1%;
-  padding: 0 2%;
-  float: right;
-  clear: right;
-}
-
-.artist {
-  width: 80%;
-}
-
-.album {
-  width: 80%;
-}
-
-ul {
-  list-style-type: none;
-}
-.genre table {
-  width: 100%;
+  border: 2px solid black;
+  text-align: left;
 }
 
 .songs ul li {
@@ -63,116 +51,16 @@ ul {
 .songs li + li:before{
     content: " | ";
     padding: 0 15px;
-
-
-
-/***** Old Code
-
-nav {
-  border: 2px solid black;
-  background-color: #ffb4b0;
-}
-
-nav ul li {
-  display: inline;
-  }
-
-nav li + li:before{
-    content: " | ";
-    padding: 0 5px;
-}
-
-section > .flexbox {
-  border: 1px solid black;
-  max-width: 25%;
-  background-color: #4dd7fa;
-  padding: 5px;
-  float: left;
-  clear: left;
-}
-
-
-.artist {
-  width: 80%;
-}
-
-.album {
-  width: 80%;
 }
 
 ul {
   list-style-type: none;
 }
 
-.songs {
-  
-  border: 1px solid black;
-  width: 60%;
-  background-color: #fefac0;
-  float: right;
-  clear: right;
+.songs p {
+  color: #785616;
+  padding: 0 0 0 30px;
 }
 
-.songs ul li {
-  display: inline;
-}
 
-.songs li + li:before{
-    content: " | ";
-    padding: 0 5px;
 
-*/
-
-/* Old Code */
-/**td {
-  border-style: solid;
-  border-top: none;
-  border-right: single;
-  border-bottom: none;
-  border-left: none;
-  padding: 1% 2%;
-}
-
-nav {
-  max-width: 100%;
-  max-height: 30%;
-  padding: 1% 2%;
-  border: 2px solid black;
-  background-color: #ffb4b0;
-}
-
-nav > table {
-  width: 40%;
-}
-
-.music {
-  margin: 10px 0 0 0;
-  width: 40%;
-  border: 2px solid black;
-  background-color: #4dd7fa;
-  float: left;
-  clear: left;
-}
-
-input {
-  width: 85%;
-}
-
-.artist {
-  width: 85%;
-}
-
-.song {
-  margin:10px 0 0 0;
-  border: 2px solid black;
-  width: 55%;
-  background-color: #fefac0;
-  float: right;
-  clear: right;
-}
-
-.info {
-  width: 95%;
-}
-
-*/
