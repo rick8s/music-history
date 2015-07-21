@@ -9,6 +9,9 @@ songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little
 songs.unshift("Save Me From Myself > by Christina Aquilera on the album Back to Basics");
 songs.push("Out of The Woods > by Taylor Swift on the album 1989");
 
+
+
+
 var songList = document.getElementById("newSongs");
 
 for (var i = 0; i < songs.length; i++) {
@@ -20,7 +23,9 @@ var temp =  songs[i];
 	temp = temp.replace("(", "");
 	temp = temp.replace("!", "");
 
-	songs[i] = temp;
+	songs[i] = "<p>" + temp + "</p>";
 }
 
-songList.innerHTML = songs.join(" <br><br>");
+songList.innerHTML = songs.join("");
+
+
